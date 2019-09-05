@@ -1,4 +1,4 @@
-const origin_proxy_url = 'http://ccs-operation-api.jdcloud.com';
+const origin_proxy_url = 'http://xx.com';
 const local_proxy_port = 3002;
 const local_proxy_url = `http://localhost:${local_proxy_port}`;
 
@@ -7,7 +7,7 @@ const use_local = ~original.indexOf('--local');
 const proxy_url = use_local
   ? local_proxy_url
   : origin_proxy_url;
-var renewal_url = 'http://renewal-console.jcloud.com';
+var renewal_url = 'http://renewal-xx.jcloud.com';
 
 
 module.exports = {
