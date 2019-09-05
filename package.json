@@ -13,7 +13,9 @@
     "echojoy-ui": "^0.3.1",
     "file-saver": "^2.0.2",
     "joylu_echo-orange-ui": "^1.2.2",
-    "vue": "^2.6.10"
+    "vue": "^2.6.10",
+    "vue-router": "^3.0.3",
+    "vuex": "^3.0.1"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.9.0",
