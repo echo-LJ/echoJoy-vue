@@ -264,7 +264,9 @@ function axiosWrapper(globalOption) {
  */
 export default option => axiosWrapper({
   transformResponse: data => void (0), // eslint-disable-line no-unused-vars
-})(option);
+})(option).catch((error) =>{
+  console.log(error);
+}); //catch是为了解决报错：unhandled promise rejection
 
 /**
  * 获得用于下载的 wrapper

@@ -1,4 +1,4 @@
-const origin_proxy_url = "http://origin_proxy_url.jdcloud.com";
+const origin_proxy_url = "http://ccs-operation-api.jdcloud.com";
 const local_proxy_port = 3002;
 const local_proxy_url = `http://localhost:${local_proxy_port}`;
 
