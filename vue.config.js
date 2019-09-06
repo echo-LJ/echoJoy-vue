@@ -1,19 +1,23 @@
-const origin_proxy_url = 'http://xx.com';
+const origin_proxy_url = "http://origin_proxy_url.jdcloud.com";
 const local_proxy_port = 3002;
 const local_proxy_url = `http://localhost:${local_proxy_port}`;
 
 const { original } = JSON.parse(process.env.npm_config_argv);
+console.log(process.env.npm_config_argv);
 const use_local = ~original.indexOf('--local');
 const proxy_url = use_local
   ? local_proxy_url
   : origin_proxy_url;
-var renewal_url = 'http://renewal-xx.jcloud.com';
+var renewal_url = "http://renewal-console.jcloud.com";
 
 
+// export const config = {
+//   origin_proxy_url,
+//   local_proxy_port,
+//   local_proxy_url
+// };
 module.exports = {
-  // origin_proxy_url,
-  // local_proxy_port,
-  // local_proxy_url,
+  
   devServer: {
     proxy: {
       '/ccs-api': {
@@ -32,5 +36,4 @@ module.exports = {
       }
     }
   }
-  
-}
+};

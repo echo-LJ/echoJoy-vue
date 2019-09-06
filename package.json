@@ -5,7 +5,9 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "server": "nodemon api/server.js",
+    "devlocal": "shell-exec --colored-output \"npm run serve --local\" \"npm run server\""
   },
   "dependencies": {
     "axios": "^0.19.0",
@@ -24,6 +26,11 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
+    "express": "^4.17.1",
+    "klaw-sync": "^6.0.0",
+    "nodemon": "^1.19.2",
+    "request": "^2.88.0",
+    "shell-executor": "^6.0.1",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
